@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(12, 1, 16);
+  }
+ 
+.container{
+    border-radius: 50px;
+    border: solid white 1px;
+    padding: 100px;
+    margin: 100px;
+}
+
+    
+.note {
+    border-radius: 10px;
+    border: solid white 1px;
+    padding: 10px;
+    margin: 30px;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.addNote{
+    margin: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: rgb(12, 1, 16);
+    border: solid 1px blueviolet;
+    color: blueviolet;
+    box-shadow: 0 0 20px rgba(75, 37, 91, 0.5);
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+.addNote:hover{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: blueviolet;
+    border: solid 1px rgb(12, 1, 16);
+    color: rgb(12, 1, 16);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(75, 37, 91, 0.5);
+}
