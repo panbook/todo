@@ -10,6 +10,20 @@ body {
     color: white;
 }
 
+.clock {
+  width: auto;
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+  padding: 10px;
+  border: 5px double orange;
+  position: absolute;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+}
+
     
 
 .addNote{
@@ -133,4 +147,5 @@ body {
   .note-checkbox:hover{
     cursor: pointer;
   }
+
 
