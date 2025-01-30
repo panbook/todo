@@ -16,7 +16,7 @@ body {
   color: white;
   font-size: xx-large;
   padding: 10px;
-  border: 5px double orange;
+  border: 5px solid blueviolet;
   position: absolute;
   position: fixed;
   top: 20px;
