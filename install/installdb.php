@@ -1,8 +1,8 @@
 <?php
 
 $servername = "sql.freedb.tech";
-$username = "todoadmin";
-$password = "TymJerAreSzefy";
+$username = "root";
+$password = "TymJerAre123";
 $dbname = "todosons";
 
 
