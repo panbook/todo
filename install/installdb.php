@@ -1,6 +1,6 @@
 <?php
 
-$servername = "192.168.1.78";
+$servername = "sql.freedb.tech";
 $username = " root";
 $password = "TymJerAre123";
 $dbname = "todosons";
