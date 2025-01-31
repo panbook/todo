@@ -22,7 +22,7 @@ tresc varchar(30)
 
 
 if ($conn->query($sql) === TRUE) {
-  echo "Table MyGuests created successfully";
+  echo "Table Kartki created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
