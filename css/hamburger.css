@@ -1,0 +1,50 @@
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; /* Dodanie animacji powrotu */
+}
+
+.hamburger-icon {
+  background-color: rgb(12, 1, 16);
+
+    z-index: 900;
+    font-size: 60px; /* Zwiększenie rozmiaru ikony */
+    cursor: pointer;
+    color: blueviolet; /* Kolor ikony ustawiony na biały */
+    padding: 15px; /* Zwiększenie wielkości pola kliknięcia */
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+
+}
+
+.menu-content {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    right: -350px; /* Ukrywanie menu poza ekranem */
+    width: 250px;
+    height: 94%;
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out; /* Animacja wjazdu */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.menu-content p {
+    margin: 0;
+}
+
+.menu-content.show {
+    right: 0; /* Wyjeżdża na ekran */
+}
+
+.hamburger-menu.show {
+    right: 340px; /* Przesunięcie przycisku razem z menu */
+}
+
