@@ -7,43 +7,145 @@ body {
     border: solid white 1px;
     padding: 100px;
     margin: 100px;
+    color: white;
+}
+
+.clock {
+  width: auto;
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+  padding: 10px;
+  border: 5px solid blueviolet;
+  position: absolute;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
 }
 
     
-.note {
-    border-radius: 10px;
-    border: solid white 1px;
-    padding: 10px;
-    margin: 30px;
-    min-width: 200px;
-    box-sizing: border-box;
-}
 
 .addNote{
-    margin: 20px;
+    margin: 50px;
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px;
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     background-color: rgb(12, 1, 16);
     border: solid 1px blueviolet;
     color: blueviolet;
-    box-shadow: 0 0 20px rgba(75, 37, 91, 0.5);
-    transition: background-color 0.5s, color 0.5s, border 0.5s;
+    box-shadow: 0 0 80px rgba(150, 73, 183, 0.5);
+    transition: background-color 0.5s, color 0.5s, border 0.5s, padding 0.5s, right 0.5s, bottom 0.5s;
 }
 
 .addNote:hover{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
+    bottom: 15px;
+    right: 15px;
+    padding: 15px;
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     background-color: blueviolet;
     border: solid 1px rgb(12, 1, 16);
     color: rgb(12, 1, 16);
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(75, 37, 91, 0.5);
+    box-shadow: 20 20 80px rgba(150, 73, 183, 0.5);
 }
+
+
+  .note-container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: relative;
+  }
+  .note {
+      height: 100px;
+      margin-bottom: 10px;
+      padding: 10px;
+      margin: 30px;
+  }
+  
+  .note-text{
+    margin: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .submit-button {
+      margin: 4px;
+      background-color: rgb(12, 1, 16);
+      color: rgb(0, 222, 0);
+      width: 120px;
+      border: solid 1px rgb(0, 222, 0);
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.5s, color 0.5s, border 0.5s;
+    }
+    .submit-button:hover {
+        background-color: rgb(0, 222, 0);
+        color: rgb(12, 1, 16);
+        width: 120px;
+        border: solid 1px rgb(12, 1, 16);
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .delete-button {
+        margin: 4px;
+        background-color: rgb(12, 1, 16);
+        color: rgb(222, 0, 0);
+        width: 120px;
+        border: solid 1px rgb(222, 0, 0);
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s, border 0.5s;
+    }
+    .delete-button:hover {
+      background-color: rgb(222, 0, 0);
+      color: rgb(12, 1, 16);
+      width: 120px;
+      border: solid 1px rgb(12, 1, 16);
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  .edit-button {
+    margin: 4px;
+    background-color: rgb(12, 1, 16);
+    color: orange;
+    width: 120px;
+    border: solid 1px orange;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+  .edit-button:hover{
+    background-color: orange;
+    color: rgb(12, 1, 16);
+    width: 120px;
+    border: solid 1px rgb(12, 1, 16);
+  }
+    
+  .note-checkbox {
+    margin: 4px;
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+  }
+  .note-checkbox:hover{
+    cursor: pointer;
+  }
+
+
