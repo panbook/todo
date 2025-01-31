@@ -1,9 +1,9 @@
 <?php
 
-$servername = "sql.freedb.tech";
-$username = "freedb_todoadmin";
-$password = "GhxSZq8$5BavF5#";
-$dbname = "freedb_todosons";
+$servername = "192.168.1.78";
+$username = " root";
+$password = "TymJerAre123";
+$dbname = "todosons";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
