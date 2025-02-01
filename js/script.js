@@ -52,6 +52,7 @@ btn.addEventListener("click", () => {
     let form = document.createElement("form");
     form.setAttribute("action", "insert.php");
     form.setAttribute("method", "post");
+    form.appendChild(submitButton);
   });
 
   // Funkcja zamieniająca tekst z powrotem na textarea

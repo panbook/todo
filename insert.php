@@ -14,7 +14,9 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
-
+<script>
+console.log($textValue);
+</script>
 
 $sql = "INSERT INTO Kartki(`tresc`) VALUES ('$textValue')";
 
