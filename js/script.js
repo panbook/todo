@@ -46,6 +46,8 @@ btn.addEventListener("click", () => {
     noteContainer.replaceChild(textElement, nowyParagraf);
     submitButton.style.display = "none"; // Ukrywanie przycisku Zatwierdź
     editButton.style.display = "inline-block"; // Pokazywanie przycisku Edytuj
+
+    
   });
 
   // Funkcja zamieniająca tekst z powrotem na textarea
@@ -59,6 +61,8 @@ btn.addEventListener("click", () => {
     submitButton.style.display = "inline-block"; // Pokazywanie przycisku Zatwierdź
     editButton.style.display = "none"; // Ukrywanie przycisku Edytuj
     nowyParagraf = newTextarea; // Aktualizacja odniesienia do nowego textarea
+
+    console.log(textValue);
   });
 
   // Dodawanie elementów do kontenera notatki
