@@ -43,6 +43,7 @@ btn.addEventListener("click", () => {
     let textValue = nowyParagraf.value;
     let textElement = document.createElement("div");
     textElement.setAttribute("class", "note-text");
+    textValue.setAttribute("id", "text");
     textElement.innerText = textValue;
     noteContainer.replaceChild(textElement, nowyParagraf);
     submitButton.style.display = "none"; // Ukrywanie przycisku Zatwierdź
