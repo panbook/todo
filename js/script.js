@@ -2,6 +2,7 @@ const btn = document.querySelector("button");
 const targetDiv = document.querySelector("#container");
 
 btn.addEventListener("click", () => {
+
   // Tworzenie kontenera dla notatki
   let noteContainer = document.createElement("div");
   noteContainer.setAttribute("class", "note-container");
@@ -47,7 +48,9 @@ btn.addEventListener("click", () => {
     submitButton.style.display = "none"; // Ukrywanie przycisku Zatwierdź
     editButton.style.display = "inline-block"; // Pokazywanie przycisku Edytuj
 
-    
+    let form = document.createElement("form");
+    form.setAttribute("action", "insert.php");
+    form.setAttribute("method", "post");
   });
 
   // Funkcja zamieniająca tekst z powrotem na textarea
